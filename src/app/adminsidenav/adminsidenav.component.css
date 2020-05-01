@@ -1,0 +1,21 @@
+
+mat-container
+{
+ height:auto;
+}
+.profile-card{
+    text-align: center;
+    padding:20px;
+}
+
+a{
+    color: black;
+    align-content: center;
+}
+/* mat-sidenav-content
+{
+ display:flex; 
+ width: 90%;
+ min-width: 400px;
+ height:0%
+} */

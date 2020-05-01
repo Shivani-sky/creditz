@@ -1,0 +1,78 @@
+<div *ngIf="this.storeRole=='Admin' and this.store!=null">
+    <mat-sidenav-container>
+        
+        <mat-sidenav #start mode="side" opened >
+                <mat-nav-list>
+                <div class="profile-card">
+                    <img width:200px
+                        height:50px
+                        object-fit:cover
+                        src="assets\admin.jpg" alt="admin.jpg">
+                        <div class="header">
+                           <h4>Admin</h4>
+                        </div>
+               </div>
+
+               <a mat-list-item [routerLink]="'/admin'">
+                <mat-icon>question_answer</mat-icon>
+                <span>Person Applications</span>
+               </a>
+               <br>
+                <a mat-list-item [routerLink]="'/organization-creditor-list'">
+                    <mat-icon>question_answer</mat-icon>
+                    <span>Organization Applications</span>
+                </a>
+                <br>
+               
+                <a mat-list-item [routerLink]="'/analyst-registration'">
+                    <mat-icon>person_add</mat-icon>
+                    <span>RegisterAnalyst</span>
+                </a>
+                <br>
+    
+                <a mat-list-item [routerLink]="'/show-analyst'">
+                    <mat-icon>delete</mat-icon>
+                    <span> Show Analyst</span>
+                </a>
+                <br>
+    
+                <a mat-list-item [routerLink]="'/schedular'"  >
+                    <mat-icon>alarm</mat-icon>
+                    <span> Schedular</span>
+                </a>
+                <br>
+            </mat-nav-list>
+            
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <mat-accordion>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Schedular
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Trigger Schedular
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                   <mat-action-row>
+                  <button mat-button mat-raised-button color="primary"  (click)="personApplicantClick()">Individual Applications Status</button>
+                   <button mat-button mat-raised-button color="primary"  (click)="organizationApplicantClick()">Organization Applications Status</button>
+                </mat-action-row>
+                <h1>Hello Admin,</h1>
+                <h4>Click on "Individual Applications Status" to send out all the pending E-mails application status to "Person Applicants".</h4>
+                <h4>Click on "Organization Applications Status" to send out all the pending E-mail application status to "Organization applicants".</h4>
+                
+              </mat-expansion-panel>
+                
+              </mat-accordion>
+             <img src="assets/alarm1.jpg" style="width:100%;height:500px;">
+        
+        </mat-sidenav-content>
+    
+        </mat-sidenav-container>
+        </div>
+        <div *ngIf="this.store==null">
+            <app-login></app-login>
+         </div>
+        <router-outlet></router-outlet>

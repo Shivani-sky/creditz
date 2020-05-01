@@ -2729,3 +2729,150 @@ java.lang.NullPointerException: null
 2020-04-30 06:21:39.349  INFO 6220 --- [http-nio-9999-exec-7] s.PersonApplicationServiceImplementation : PersonApplicationServiceImplementation::findTopPersonCreditors::call findTopPersonCreditors method
 2020-04-30 06:21:39.429  INFO 6220 --- [http-nio-9999-exec-8] c.i.c.OrganizationApplicationController  : OrganizationApplicationController ::findTopPersonCreditors::return to findTopPersonCreditors method
 2020-04-30 06:21:39.430  INFO 6220 --- [http-nio-9999-exec-8] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation::findApplicants::call findByemailStatus method with email Status:False
+2020-04-30 06:56:53.501  INFO 6220 --- [Thread-113] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 06:56:53.503  INFO 6220 --- [Thread-113] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2020-04-30 06:56:53.506  INFO 6220 --- [Thread-113] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2020-04-30 06:56:53.955  INFO 6220 --- [restartedMain] com.impetus.RmsApplication               : Starting RmsApplication on dell-PC with PID 6220 (F:\case-study-project\SpringBoot\target\classes started by dell in F:\case-study-project\SpringBoot)
+2020-04-30 06:56:53.955  INFO 6220 --- [restartedMain] com.impetus.RmsApplication               : No active profile set, falling back to default profiles: default
+2020-04-30 06:56:54.472  INFO 6220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-30 06:56:54.508  INFO 6220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 7 JPA repository interfaces.
+2020-04-30 06:56:54.755  INFO 6220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-04-30 06:56:54.756  INFO 6220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-30 06:56:54.756  INFO 6220 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-30 06:56:54.798  INFO 6220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-30 06:56:54.798  INFO 6220 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 838 ms
+2020-04-30 06:56:54.862  INFO 6220 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-30 06:56:54.877  INFO 6220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2020-04-30 06:56:54.885  INFO 6220 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2020-04-30 06:56:54.886  INFO 6220 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-30 06:56:55.467  INFO 6220 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-30 06:56:55.468  INFO 6220 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 06:56:55.481  INFO 6220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-30 06:56:56.063  INFO 6220 --- [restartedMain] c.i.security.SecurityConfiguration       : global Security
+2020-04-30 06:56:56.153  INFO 6220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-04-30 06:56:56.164  INFO 6220 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6495d9bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@7760550f, org.springframework.security.web.header.HeaderWriterFilter@338fac0c, org.springframework.security.web.authentication.logout.LogoutFilter@2d6ccc89, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@798d6cce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ca8d689, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2209e8dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@464a3445, org.springframework.security.web.session.SessionManagementFilter@5f41eff1, org.springframework.security.web.access.ExceptionTranslationFilter@28a67eb4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67dce6df]
+2020-04-30 06:56:56.287  INFO 6220 --- [restartedMain] com.impetus.config.SchedulerConfig       : SchedularConfig::configureTasks::initializing threadpool
+2020-04-30 06:56:56.287  INFO 6220 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-30 06:56:56.309  INFO 6220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-04-30 06:56:56.310  INFO 6220 --- [restartedMain] com.impetus.RmsApplication               : Started RmsApplication in 2.389 seconds (JVM running for 9155.504)
+2020-04-30 06:56:56.313  INFO 6220 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-30 09:20:04.283  INFO 4388 --- [restartedMain] com.impetus.RmsApplication               : Starting RmsApplication on dell-PC with PID 4388 (F:\case-study-project\SpringBoot\target\classes started by dell in F:\case-study-project\SpringBoot)
+2020-04-30 09:20:04.293  INFO 4388 --- [restartedMain] com.impetus.RmsApplication               : No active profile set, falling back to default profiles: default
+2020-04-30 09:20:04.475  INFO 4388 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\dell\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/dell/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/dell/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/dell/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/dell/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/dell/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/dell/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-30 09:20:04.475  INFO 4388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-30 09:20:04.475  INFO 4388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-30 09:20:07.960  INFO 4388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-30 09:20:08.350  INFO 4388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 337ms. Found 7 JPA repository interfaces.
+2020-04-30 09:20:10.925  INFO 4388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-04-30 09:20:10.967  INFO 4388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-30 09:20:10.967  INFO 4388 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-30 09:20:11.225  INFO 4388 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-30 09:20:11.227  INFO 4388 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6752 ms
+2020-04-30 09:20:11.672  INFO 4388 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-30 09:20:12.335  INFO 4388 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-30 09:20:13.748  INFO 4388 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-30 09:20:14.351  INFO 4388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-30 09:20:14.806  INFO 4388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-30 09:20:14.847  INFO 4388 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-30 09:20:18.456  INFO 4388 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-30 09:20:18.496  INFO 4388 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 09:20:18.586  INFO 4388 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-30 09:20:21.854  INFO 4388 --- [restartedMain] c.i.security.SecurityConfiguration       : global Security
+2020-04-30 09:20:22.612  INFO 4388 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-04-30 09:20:22.750  INFO 4388 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14428f28, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a8f3117, org.springframework.security.web.header.HeaderWriterFilter@4da67aed, org.springframework.security.web.authentication.logout.LogoutFilter@6e88541e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f4fe738, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37376bec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39f288e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c15be04, org.springframework.security.web.session.SessionManagementFilter@6c8d9052, org.springframework.security.web.access.ExceptionTranslationFilter@8460300, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39f6ad65]
+2020-04-30 09:20:23.200  INFO 4388 --- [restartedMain] com.impetus.config.SchedulerConfig       : SchedularConfig::configureTasks::initializing threadpool
+2020-04-30 09:20:23.200  INFO 4388 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-30 09:20:23.281  INFO 4388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-04-30 09:20:23.291  INFO 4388 --- [restartedMain] com.impetus.RmsApplication               : Started RmsApplication in 20.409 seconds (JVM running for 23.89)
+2020-04-30 11:27:52.027  INFO 4388 --- [http-nio-9999-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 11:27:52.028  INFO 4388 --- [http-nio-9999-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:27:52.047  INFO 4388 --- [http-nio-9999-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-04-30 11:27:52.175  INFO 4388 --- [http-nio-9999-exec-3] c.impetus.controller.AnalystController   : AnalystController::uniqueEmailCheck::call uniqueCheckEmail method with userEmailu@gmail.com
+2020-04-30 11:27:52.176  INFO 4388 --- [http-nio-9999-exec-3] c.i.s.AnalystServiceImplementation       : AnalystServiceImplementation::uniqueCheckEmail::call findByUserEmail method with user email:u@gmail.com
+2020-04-30 11:28:48.772  INFO 4388 --- [http-nio-9999-exec-7] c.impetus.controller.AnalystController   : AnalystController::uniqueEmailCheck::call uniqueCheckEmail method with userEmailperson@gmail.com
+2020-04-30 11:28:48.773  INFO 4388 --- [http-nio-9999-exec-7] c.i.s.AnalystServiceImplementation       : AnalystServiceImplementation::uniqueCheckEmail::call findByUserEmail method with user email:person@gmail.com
+2020-04-30 11:28:59.633  INFO 4388 --- [http-nio-9999-exec-4] c.impetus.controller.AnalystController   : AnalystController::uniqueEmailCheck::call uniqueCheckEmail method with userEmail
+2020-04-30 11:28:59.633  INFO 4388 --- [http-nio-9999-exec-4] c.i.s.AnalystServiceImplementation       : AnalystServiceImplementation::uniqueCheckEmail::call findByUserEmail method with user email:
+2020-04-30 11:29:16.141  INFO 4388 --- [http-nio-9999-exec-8] c.impetus.controller.AnalystController   : AnalystController::uniqueEmailCheck::call uniqueCheckEmail method with userEmailshubhamembiot5g@gmail.com
+2020-04-30 11:29:16.142  INFO 4388 --- [http-nio-9999-exec-8] c.i.s.AnalystServiceImplementation       : AnalystServiceImplementation::uniqueCheckEmail::call findByUserEmail method with user email:shubhamembiot5g@gmail.com
+2020-04-30 11:29:58.002  INFO 4388 --- [http-nio-9999-exec-9] c.impetus.controller.AnalystController   : AnalystController::uniqueEmailCheck::call uniqueCheckEmail method with userEmailg@gmail.com
+2020-04-30 11:29:58.003  INFO 4388 --- [http-nio-9999-exec-9] c.i.s.AnalystServiceImplementation       : AnalystServiceImplementation::uniqueCheckEmail::call findByUserEmail method with user email:g@gmail.com
+2020-04-30 11:30:49.413  INFO 4388 --- [http-nio-9999-exec-1] .i.s.CustomBasicAuthenticationEntryPoint : CustomBasicAuthenticationEntryPoint::commence::working
+2020-04-30 11:30:56.062  WARN 4388 --- [http-nio-9999-exec-10] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [215] milliseconds.
+2020-04-30 11:32:24.700  INFO 4388 --- [http-nio-9999-exec-3] c.i.c.OrganizationApplicationController  : OrganizationApplicationController ::organizationApplicantApplicationSubmit::return to organizationRiskMitigate 
+2020-04-30 11:32:24.700  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Evaluating Policy
+2020-04-30 11:32:24.860  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Fetching CIBIL Records
+2020-04-30 11:32:24.860  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::CIBIL Records, Fetched
+2020-04-30 11:32:24.861  INFO 4388 --- [http-nio-9999-exec-3] c.i.service.UserServiceImplementation    : UserServiceImplementation ::sendOTP::Current time of the day using Calendar-24 hour format:Thu Apr 30 11:32:24 PDT 2020
+2020-04-30 11:32:24.861  INFO 4388 --- [http-nio-9999-exec-3] c.i.service.UserServiceImplementation    : UserServiceImplementation ::sendOTP::Current time of the day using Calendar-24 hour format:11:32:24
+2020-04-30 11:32:24.892  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Application Status SET
+2020-04-30 11:32:24.892  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Inserting Data into database
+2020-04-30 11:32:24.923  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Data inserted Succesfully
+2020-04-30 11:32:24.923  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Fetching Application ID
+2020-04-30 11:32:24.932  INFO 4388 --- [http-nio-9999-exec-3] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Return Application ID to controller
+2020-04-30 11:32:30.828  INFO 4388 --- [http-nio-9999-exec-4] c.i.c.OrganizationApplicationController  : OrganizationApplicationController ::organizationHistory::return to getHistory method with userId:com.impetus.model.OrganizationApplicant@21a6eb49
+2020-04-30 11:32:30.828  INFO 4388 --- [http-nio-9999-exec-4] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation::getHistory::call findByemailStatus method with findByUserId:5
+2020-04-30 11:36:32.015  INFO 4388 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 11:36:32.086  INFO 4388 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-30 11:36:32.129  INFO 4388 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-30 11:36:35.372  INFO 4388 --- [restartedMain] com.impetus.RmsApplication               : Starting RmsApplication on dell-PC with PID 4388 (F:\case-study-project\SpringBoot\target\classes started by dell in F:\case-study-project\SpringBoot)
+2020-04-30 11:36:35.373  INFO 4388 --- [restartedMain] com.impetus.RmsApplication               : No active profile set, falling back to default profiles: default
+2020-04-30 11:36:36.139  INFO 4388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-30 11:36:36.423  INFO 4388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 282ms. Found 7 JPA repository interfaces.
+2020-04-30 11:36:37.084  INFO 4388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2020-04-30 11:36:37.086  INFO 4388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-30 11:36:37.086  INFO 4388 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-30 11:36:37.144  INFO 4388 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-30 11:36:37.145  INFO 4388 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1764 ms
+2020-04-30 11:36:37.322  INFO 4388 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-30 11:36:37.337  INFO 4388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-04-30 11:36:37.346  INFO 4388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-04-30 11:36:37.347  INFO 4388 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-30 11:36:39.675  INFO 4388 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-30 11:36:39.677  INFO 4388 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-30 11:36:39.712  INFO 4388 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-30 11:36:41.707  INFO 4388 --- [restartedMain] c.i.security.SecurityConfiguration       : global Security
+2020-04-30 11:36:42.283  INFO 4388 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-04-30 11:36:42.306  INFO 4388 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e141e78, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e6da80, org.springframework.security.web.header.HeaderWriterFilter@40b926de, org.springframework.security.web.authentication.logout.LogoutFilter@7bff997, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7cd26d3a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e5023f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47567332, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@717bc005, org.springframework.security.web.session.SessionManagementFilter@31205775, org.springframework.security.web.access.ExceptionTranslationFilter@41d94c80, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29d6bdc1]
+2020-04-30 11:36:42.541  INFO 4388 --- [restartedMain] com.impetus.config.SchedulerConfig       : SchedularConfig::configureTasks::initializing threadpool
+2020-04-30 11:36:42.542  INFO 4388 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-30 11:36:43.286  INFO 4388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2020-04-30 11:36:43.288  INFO 4388 --- [restartedMain] com.impetus.RmsApplication               : Started RmsApplication in 9.042 seconds (JVM running for 8203.816)
+2020-04-30 11:36:43.291  INFO 4388 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-04-30 11:48:10.492  INFO 4388 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-30 11:48:10.493  INFO 4388 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:48:10.500  INFO 4388 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-30 11:48:10.635  INFO 4388 --- [http-nio-9999-exec-2] c.i.c.OrganizationApplicationController  : OrganizationApplicationController ::organizationHistory::return to getHistory method with userId:com.impetus.model.OrganizationApplicant@1630f85a
+2020-04-30 11:48:10.636  INFO 4388 --- [http-nio-9999-exec-2] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation::getHistory::call findByemailStatus method with findByUserId:5
+2020-04-30 12:00:00.177  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::Schedular starts
+2020-04-30 12:00:00.177  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.ScheduledTasks               : ScheduledTasks::sendApplicationStatusToPersonApplicants::Schedular starts
+2020-04-30 12:00:00.178  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::called find applicants method
+2020-04-30 12:00:00.178  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.ScheduledTasks               : ScheduledTasks::sendApplicationStatusToPersonApplicants::called find applicants method
+2020-04-30 12:00:00.180  INFO 4388 --- [my-scheduled-task-pool-2] s.PersonApplicationServiceImplementation : PersonApplicationServiceImplementation::findApplicants::call findByemailStatus method
+2020-04-30 12:00:00.288  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::call sendEmailToApplicants method
+2020-04-30 12:00:00.289  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::The email Status isFalse
+2020-04-30 12:00:00.289  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::The applicationStatus is:Approved
+2020-04-30 12:00:00.289  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::call sendEmailToApplicants method
+2020-04-30 12:00:00.289  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.service.MailService          : MailService:: sendMail::call sendMail method
+2020-04-30 12:00:00.308  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.ScheduledTasks               : ScheduledTasks::sendApplicationStatusToPersonApplicants::The user email is:person@gmail.com
+2020-04-30 12:00:00.308  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.ScheduledTasks               : ScheduledTasks::sendApplicationStatusToPersonApplicants::The email Status is:False
+2020-04-30 12:00:00.308  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.ScheduledTasks               : ScheduledTasks::sendApplicationStatusToPersonApplicants::The applicationStatus isRejected Early
+2020-04-30 12:00:00.308  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.ScheduledTasks               : ScheduledTasks::sendApplicationStatusToPersonApplicants::call sendEmailToApplicants method
+2020-04-30 12:00:00.308  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.service.MailService          : MailService:: sendMail::call sendMail method
+2020-04-30 12:00:07.972  INFO 4388 --- [my-scheduled-task-pool-2] com.impetus.ScheduledTasks               : ScheduledTasks ::sendApplicationStatusToPersonApplicants::call updateEmailStatus Method
+2020-04-30 12:00:08.024  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicantss::call updateEmailStatus Method
+2020-04-30 12:00:08.030  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::call sendEmailToApplicants method
+2020-04-30 12:00:08.030  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::The email Status isFalse
+2020-04-30 12:00:08.030  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::The applicationStatus is:Rejected Early
+2020-04-30 12:00:08.030  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::call sendEmailToApplicants method
+2020-04-30 12:00:08.030  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.service.MailService          : MailService:: sendMail::call sendMail method
+2020-04-30 12:00:15.700  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicantss::call updateEmailStatus Method
+2020-04-30 12:00:15.706  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::call sendEmailToApplicants method
+2020-04-30 12:00:15.706  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::The email Status isFalse
+2020-04-30 12:00:15.707  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::The applicationStatus is:Rejected Early
+2020-04-30 12:00:15.707  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicants::call sendEmailToApplicants method
+2020-04-30 12:00:15.707  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.service.MailService          : MailService:: sendMail::call sendMail method
+2020-04-30 12:00:21.837  INFO 4388 --- [my-scheduled-task-pool-1] com.impetus.ScheduledTasks               : ScheduledTasks::scheduleSendApplicationStatusToPersonApplicantss::call updateEmailStatus Method
+2020-04-30 12:58:29.556  WARN 4388 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=36m21s992ms293µs780ns).
+2020-04-30 12:58:38.180  INFO 4388 --- [http-nio-9999-exec-1] c.i.c.OrganizationApplicationController  : OrganizationApplicationController ::organizationHistory::return to getHistory method with userId:com.impetus.model.OrganizationApplicant@62080f78
+2020-04-30 12:58:38.180  INFO 4388 --- [http-nio-9999-exec-1] nizationApplicationServiceImplementation : OrganizationApplicationServiceImplementation::getHistory::call findByemailStatus method with findByUserId:5

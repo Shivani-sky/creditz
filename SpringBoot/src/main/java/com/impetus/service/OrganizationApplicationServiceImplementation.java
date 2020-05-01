@@ -64,7 +64,6 @@ public class OrganizationApplicationServiceImplementation implements Organizatio
 
 			application.setDate(UserServiceImplementation.getCurrentDate());
 			application.setTime(UserServiceImplementation.getCurrentTime());
-			System.out.println("status");
 
 			application.setApplicationStatus(this.approveOrDisapprove(application, reportOfCurrentUser));
 			LOG.info("OrganizationApplicationServiceImplementation ::organizationRiskMitigate::Application Status SET");
@@ -110,7 +109,7 @@ public class OrganizationApplicationServiceImplementation implements Organizatio
 		daylast = calendar.get(Calendar.DAY_OF_MONTH);
 		monthlast = calendar.get(Calendar.MONTH);
 		yearlast = calendar.get(Calendar.YEAR);
-       System.out.println("inside date");
+
 		monthlast += 6;
 		if (monthlast > 12) {
 			monthlast %= 12;
@@ -159,15 +158,14 @@ public class OrganizationApplicationServiceImplementation implements Organizatio
 		Date applicationdate;
 		List<OrganizationApplicant> list = organizationApplication.findByUserId(userId);
 		noOfApplication = list.size();
-		System.out.println(noOfApplication);
+
 		if (noOfApplication > 0) {
 			String lastApplicationDate = list.get(noOfApplication - 1).getDate();
 
 			applicationdate = new SimpleDateFormat(DATEFORMAT).parse(lastApplicationDate);
-            System.out.println(applicationdate);
-            System.out.println(lastApplicationDate);
+
 			if (applicationdate != null) {
-               
+
 				nextapplicationStatus = this.checkdate(applicationdate, application.getDate());
 				if (nextapplicationStatus.equals(REJECTEDEARLY)) {
 					return REJECTEDEARLY;
